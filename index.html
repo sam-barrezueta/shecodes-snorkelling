@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🤿 SheCodes Workshop Final Project</title>
+    <style>
+      body {
+        background: rgba(244, 214, 184, 0.3);
+      }
+      .container {
+        background: linear-gradient(
+          366deg,
+          rgba(244, 214, 184, 0.7),
+          rgba(63, 209, 253, 0.5) 80.71%
+        );
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 75%;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+        min-width: 300px;
+        font-size: 45px;
+      }
+
+      h2 {
+        font-weight: normal;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 18px;
+        box-shadow: 0 0 8px 8px white inset;
+        max-width: 800px;
+        min-width: 300px;
+      }
+
+      p {
+        text-align: center;
+        color: rgb(0, 0, 0, 0.8);
+        font-size: 14px;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+        margin: 30px auto;
+        padding-inline-start: 0;
+      }
+
+      li {
+        display: inline-block;
+        padding: 0 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        font-size: 20px;
+        color: white;
+        background-color: #3a99ca;
+        border: #3a99ca;
+        border-radius: 12px;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0, 0.2);
+        padding: 12px 24px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(58, 153, 202, 0.6);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Snorkelling <br />
+        🤿 🐠
+      </h1>
+
+      <h2>The <strong>best</strong> holiday activity!</h2>
+
+      <img
+        src="https://www.lombokprivatetour.com/wp-content/uploads/2019/10/snorkeling-3-gilis-speedboat.jpg"
+        alt="snorkeler"
+        width="75%"
+      />
+
+      <p>
+        Snorkelling is the practice of swimming on or through a body of water
+        while equipped with a diving mask, a shaped breathing tube called a
+        snorkel, and usually swimfins. In cooler waters, a wetsuit may also be
+        worn. Use of this equipment allows the snorkeler to observe underwater
+        attractions for extended periods with relatively little effort and to
+        breathe while face-down at the surface.
+        <br />
+        <br />
+        Snorkelling is a popular recreational activity, particularly at tropical
+        resort locations. The primary appeal is the opportunity to observe
+        underwater life in a natural setting without the complicated equipment
+        and training required for scuba diving. It appeals to all ages because
+        of how little effort there is, and without the exhaled bubbles of
+        scuba-diving equipment. It is the basis of the two surface disciplines
+        of the underwater sport of finswimming.
+        <br />
+        <br />
+        You can <em> Dive In </em> below to book your next snorkelling trip, but
+        make sure to check out the following links to prepare first!
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.simplyscuba.com/Snorkelling/sssd1351.htm"
+            target="blank"
+          >
+            Snorkelling gear</a
+          >
+        </li>
+
+        <li>
+          <a href="https://youtu.be/9GljSvw7r3g" target="blank">
+            Learn to snorkel</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.smithsonianmag.com/travel/10-worlds-best-snorkeling-destinations-180961622/"
+            target="blank"
+          >
+            Best snorkelling spots</a
+          >
+        </li>
+      </ul>
+
+      <button>Dive in!</button>
+
+      <footer>This page was coded by Sam Barrezueta 👩🏽‍💻</footer>
+    </div>
+
+    <script>
+      let diveButton = document.querySelector("button");
+      function getInfo() {
+        let name = prompt("What is your name?");
+
+        let swim = prompt("Thanks, " + name + ", do you know how to swim?");
+        swim = swim.toLowerCase();
+        let h2 = document.querySelector("h2");
+
+        if (swim === "yes") {
+          let email = prompt(
+            "That's great, " + name + "! What is your email address?"
+          );
+          h2.innerHTML =
+            "<strong><em>Thanks, " +
+            name +
+            "! <br /> Check your emails for more information on how to book your next snorkelling trip 🏖 🤿 </em></strong>";
+        } else {
+          alert(
+            "Sorry, " +
+              name +
+              ", it's not safe for you to snorkel just yet. Try some swimming lessons first! 🏊🏼‍♀️"
+          );
+        }
+      }
+
+      diveButton.addEventListener("click", getInfo);
+    </script>
+  </body>
+</html>
