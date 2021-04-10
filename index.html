@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>🤿 SheCodes Workshop Final Project</title>
     <style>
       body {
         background: rgba(244, 214, 184, 0.3);
       }
-      .container {
+      
+      .content-bg {
         background: linear-gradient(
           366deg,
           rgba(244, 214, 184, 0.7),
@@ -16,8 +19,8 @@
         );
         font-family: Georgia, "Times New Roman", Times, serif;
         margin: 0 auto;
-        padding: 0 10px;
-        width: 75%;
+        padding: 30px 30px;
+        width: 95%;
       }
 
       h1 {
@@ -32,8 +35,6 @@
         text-align: center;
       }
       img {
-        display: block;
-        margin: 0 auto;
         border-radius: 18px;
         box-shadow: 0 0 8px 8px white inset;
         max-width: 800px;
@@ -91,71 +92,75 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>
-        Snorkelling <br />
-        🤿 🐠
-      </h1>
+    <div class="container-fluid">
+      <div class="content-bg">
+        <h1>
+          Snorkelling <br />
+          🤿 🐠
+        </h1>
 
-      <h2>The <strong>best</strong> holiday activity!</h2>
+        <h2>The <strong>best</strong> holiday activity!</h2>
 
-      <img
-        src="https://www.lombokprivatetour.com/wp-content/uploads/2019/10/snorkeling-3-gilis-speedboat.jpg"
-        alt="snorkeler"
-        width="75%"
-      />
+        <img class="img-fluid mb-4 mx-auto d-block"
+          src="https://www.lombokprivatetour.com/wp-content/uploads/2019/10/snorkeling-3-gilis-speedboat.jpg"
+          alt="snorkeler"
+          
+        />
 
-      <p>
-        Snorkelling is the practice of swimming on or through a body of water
-        while equipped with a diving mask, a shaped breathing tube called a
-        snorkel, and usually swimfins. In cooler waters, a wetsuit may also be
-        worn. Use of this equipment allows the snorkeler to observe underwater
-        attractions for extended periods with relatively little effort and to
-        breathe while face-down at the surface.
-        <br />
-        <br />
-        Snorkelling is a popular recreational activity, particularly at tropical
-        resort locations. The primary appeal is the opportunity to observe
-        underwater life in a natural setting without the complicated equipment
-        and training required for scuba diving. It appeals to all ages because
-        of how little effort there is, and without the exhaled bubbles of
-        scuba-diving equipment. It is the basis of the two surface disciplines
-        of the underwater sport of finswimming.
-        <br />
-        <br />
-        You can <em> Dive In </em> below to book your next snorkelling trip, but
-        make sure to check out the following links to prepare first!
-      </p>
+        <p>
+          Snorkelling is the practice of swimming on or through a body of water
+          while equipped with a diving mask, a shaped breathing tube called a
+          snorkel, and usually swimfins. In cooler waters, a wetsuit may also be
+          worn. Use of this equipment allows the snorkeler to observe underwater
+          attractions for extended periods with relatively little effort and to
+          breathe while face-down at the surface.
+          <br />
+          <br />
+          Snorkelling is a popular recreational activity, particularly at tropical
+          resort locations. The primary appeal is the opportunity to observe
+          underwater life in a natural setting without the complicated equipment
+          and training required for scuba diving. It appeals to all ages because
+          of how little effort there is, and without the exhaled bubbles of
+          scuba-diving equipment. It is the basis of the two surface disciplines
+          of the underwater sport of finswimming.
+          <br />
+          <br />
+          You can <em> Dive In </em> below to book your next snorkelling trip, but
+          make sure to check out the following links to prepare first!
+        </p>
 
-      <ul>
-        <li>
-          <a
-            href="https://www.simplyscuba.com/Snorkelling/sssd1351.htm"
-            target="blank"
-          >
-            Snorkelling gear</a
-          >
-        </li>
+        <ul>
+          <li>
+            <a
+              href="https://www.simplyscuba.com/Snorkelling/sssd1351.htm"
+              target="blank"
+            >
+              Snorkelling gear</a
+            >
+          </li>
 
-        <li>
-          <a href="https://youtu.be/9GljSvw7r3g" target="blank">
-            Learn to snorkel</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.smithsonianmag.com/travel/10-worlds-best-snorkeling-destinations-180961622/"
-            target="blank"
-          >
-            Best snorkelling spots</a
-          >
-        </li>
-      </ul>
+          <li>
+            <a href="https://youtu.be/9GljSvw7r3g" target="blank">
+              Learn to snorkel</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.smithsonianmag.com/travel/10-worlds-best-snorkeling-destinations-180961622/"
+              target="blank"
+            >
+              Best snorkelling spots</a
+            >
+          </li>
+        </ul>
 
-      <button>Dive in!</button>
+        <button>Dive in!</button>
 
-      <footer>This page was coded by Sam Barrezueta 👩🏽‍💻</footer>
+        <footer>This page was coded by Sam Barrezueta 👩🏽‍💻</footer>
+      </div>
+
     </div>
+
 
     <script>
       let diveButton = document.querySelector("button");
